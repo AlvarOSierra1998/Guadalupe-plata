@@ -2,49 +2,75 @@
     font-family: 'gp';
     src: url(../fonts/Wednesday.ttf)
 }
-h1,h5{
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+h1,
+h5 {
     font-family: 'gp';
-    letter-spacing: 2px;  
+    letter-spacing: 2px;
 
 }
-.logo{
+
+.logo {
     width: 7%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
 }
-.titulo{
+
+.titulo {
     width: 40%;
     margin: auto;
     display: flex;
 }
 
-.bordes{
+.bordes {
     position: relative;
 }
+.section_cards{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .bordes::after {
-    content: ""; /* Es necesario para que el elemento se visualice */
-    position: absolute; /* Posiciona el pseudo-elemento en relación al elemento principal */
+    content: "";
+    /* Es necesario para que el elemento se visualice */
+    position: absolute;
+    /* Posiciona el pseudo-elemento en relación al elemento principal */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    border-bottom: 2px solid transparent; /* Define el borde inicial (transparente) */
-    pointer-events: none; /* Evita que el pseudo-elemento interfiera con los eventos del elemento principal */
-    transition: border-color 0.3s; /* Agrega una transición para un efecto suave al pasar el mouse sobre el elemento */
-  }
-  
-  .bordes:hover::after {
-    border-color: #ffffff; /* Cambia el color del borde en hover (en este caso, rojo) */
-  }
-  
-  /*603*/
-  @media  screen and (min-width: 768px) {
-    iframe{
+    border-bottom: 2px solid transparent;
+    /* Define el borde inicial (transparente) */
+    pointer-events: none;
+    /* Evita que el pseudo-elemento interfiera con los eventos del elemento principal */
+    transition: border-color 0.3s;
+    /* Agrega una transición para un efecto suave al pasar el mouse sobre el elemento */
+}
+
+.bordes:hover::after {
+    border-color: #ffffff;
+    /* Cambia el color del borde en hover (en este caso, rojo) */
+}
+
+.btns{
+    outline: none;
+}
+
+
+/*603*/
+@media screen and (min-width: 768px) {
+    iframe {
         width: 50%;
         margin: auto;
         height: 352px;
 
     }
-    
-  }
+
+}
