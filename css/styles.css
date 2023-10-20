@@ -172,6 +172,7 @@ svg {
   white-space: nowrap; /* important */
   border-top: 3px solid #23271B;  
   border-bottom: 3px solid #23271B;
+  overflow-x: hidden  ;
 }
 
 h1, span {
@@ -182,5 +183,5 @@ h1, span {
 }
 
 .guadaLetra_mov{
-  letter-spacing: 50px;
+  letter-spacing: 80px;
 }
