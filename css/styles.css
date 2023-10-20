@@ -8,12 +8,12 @@
     box-sizing: border-box;
   }
 
-h1,
+/*h1,
 h5 {
     font-family: 'gp';
     letter-spacing: 2px;
 
-}
+}*/
 
 .logo {
     width: 7%;
@@ -35,8 +35,9 @@ h5 {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
+
 .bordes::after {
     content: "";
     /* Es necesario para que el elemento se visualice */
@@ -59,11 +60,6 @@ h5 {
     /* Cambia el color del borde en hover (en este caso, rojo) */
 }
 
-.btns{
-    outline: none;
-}
-
-
 /*603*/
 @media screen and (min-width: 768px) {
     iframe {
@@ -73,4 +69,118 @@ h5 {
 
     }
 
+}
+.foto_fondo{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: -1;
+  position: absolute;
+
+}
+
+/*botones*/
+
+.contenedor_boton {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 93%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: relative;
+  fill: none;
+  stroke: #1b1a1a;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+  width: 100%;
+  height: 50px;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 100;
+  position: relative;
+  top: -80%;
+}
+.albums img{
+  transition: .5s;
+  opacity: 0.8;
+  filter: grayscale(1);
+}
+
+.albums img:hover{
+  transform: scale(1.03);
+  opacity: 1;
+  filter: grayscale(0);
+}
+.albums{
+  overflow-x: hidden;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-evenly;
+}
+.albums div:hover{
+  background-color: black;
+  color: #ffffff;
+  transition: 1s;
+}
+
+/*SLIDER*/
+
+.slide-text {
+  font-family: 'gp';
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 1.2em 0;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap; /* important */
+  border-top: 3px solid #23271B;  
+  border-bottom: 3px solid #23271B;
+}
+
+h1, span {
+  display: inline-block;
+  font-size: 3.5em;
+  font-weight: normal;
+  width: 100%; 
+}
+
+.guadaLetra_mov{
+  letter-spacing: 50px;
 }
